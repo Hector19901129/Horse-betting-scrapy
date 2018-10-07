@@ -22,5 +22,5 @@ class FirstSpider(scrapy.Spider):
         tr = response.xpath("//div[@id='div_Discipline_T']/table/tr").extract()
         xlsx = pandas.ExcelFile("C:/test/Current.xlsx")
         bb = xlsx.parse(0)
-        print bb.icol(0).real[0]
+        
         
